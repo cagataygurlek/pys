@@ -1,0 +1,55 @@
+<LoginScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: dp(32)
+        spacing: dp(16)
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size_hint: 0.9, None
+        height: self.parent.height * 0.7
+
+        MDLabel:
+            text: "PYS"
+            halign: 'center'
+            font_style: 'H3'
+            theme_text_color: 'Primary'
+
+        MDLabel:
+            text: "Personel Yönetim Sistemi"
+            halign: 'center'
+            font_style: 'Body1'
+            theme_text_color: 'Secondary'
+
+        Widget:
+            size_hint_y: None
+            height: dp(20)
+
+        MDTextField:
+            id: username_field
+            hint_text: "Kullanıcı Adı"
+            icon_left: 'account'
+            mode: 'rectangle'
+            size_hint_y: None
+            height: dp(48)
+
+        MDTextField:
+            id: password_field
+            hint_text: "Şifre"
+            icon_left: 'lock'
+            password: True
+            mode: 'rectangle'
+            size_hint_y: None
+            height: dp(48)
+
+        MDLabel:
+            id: status_label
+            text: ""
+            halign: 'center'
+            theme_text_color: 'Error'
+            font_style: 'Caption'
+
+        MDRaisedButton:
+            text: "Giriş Yap"
+            pos_hint: {'center_x': 0.5}
+            size_hint_x: 0.8
+            on_release: root.try_login()
+</LoginScreen>

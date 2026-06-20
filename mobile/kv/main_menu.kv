@@ -1,0 +1,164 @@
+<MainMenuScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            title: "PYS Mobile"
+            left_action_items: [['logout', lambda x: root.logout()]]
+            elevation: 2
+
+        MDScrollView:
+            MDBoxLayout:
+                orientation: 'vertical'
+                padding: dp(16)
+                spacing: dp(12)
+                size_hint_y: None
+                height: self.minimum_height
+
+                MDLabel:
+                    id: welcome_label
+                    text: "Hoş Geldin"
+                    halign: 'center'
+                    font_style: 'H5'
+                    size_hint_y: None
+                    height: dp(40)
+
+                Widget:
+                    size_hint_y: None
+                    height: dp(8)
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_personel()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "👤 Personel Yönetimi"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_puantaj()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "📋 Puantaj"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_bordro()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "💰 Bordro"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_haciz()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "🔒 Haciz"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_avans()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "💳 Avans"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_izin()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "📅 İzin"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_kasa()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "🏦 Kasa"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_sigara()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "🚬 Sigara"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+
+                MDCard:
+                    size_hint_x: 1
+                    size_hint_y: None
+                    height: dp(70)
+                    padding: dp(16)
+                    on_release: root.go_ayarlar()
+                    MDBoxLayout:
+                        MDLabel:
+                            text: "⚙️ Ayarlar"
+                            font_style: 'H6'
+                        MDLabel:
+                            text: ">"
+                            halign: 'right'
+                            font_style: 'H6'
+</MainMenuScreen>

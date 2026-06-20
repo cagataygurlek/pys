@@ -1,0 +1,38 @@
+<PuantajScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            title: "Puantaj"
+            left_action_items: [['arrow-left', lambda x: root.go_back()]]
+            elevation: 2
+
+        MDBoxLayout:
+            size_hint_y: None
+            height: dp(48)
+            padding: dp(8)
+            spacing: dp(8)
+
+            MDFlatButton:
+                text: "<"
+                on_release: root.go_back()
+
+            MDLabel:
+                id: year_label
+                text: "2026"
+                halign: 'center'
+                font_style: 'H6'
+
+            MDLabel:
+                id: month_label
+                text: "6"
+                halign: 'center'
+                font_style: 'H6'
+
+            MDFlatButton:
+                text: ">"
+
+        MDScrollView:
+            MDList:
+                id: puantaj_list
+</PuantajScreen>

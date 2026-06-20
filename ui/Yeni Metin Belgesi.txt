@@ -1,0 +1,9 @@
+şu an haciz hesabı doğru fakat bordro hesapla dediğimde direkt hacizdeki borç hesabına ödeme yapılmış gibi borcundan düşüyor ve kesinti tutarını ve kesinti toplamını göstermiyor bordro hesapla dediğimde direkt haciz borcundan düşmesin haciz ödemesi yap dediğimde borcundan düşsün  bordro hesaplanıp haciz ödemesi yapılmadıysa haciz sayfasında tabloda ayrı bir sütun var kesinti yapılmış ama ödeme yapılmamış (havuzda bekleyen tutar isimli sütun) tutarı göstersin. Orası boş görünüyor.
+
+Haciz sayfasından Ödeme yapıldıktan sonra haciz borcundan düşsün havuzda bekleyen tutar sütununu haciz tablosuna ekleyeceksin bordro tablosuna eklenmeyecek.
+
+haciz sayfasında aylık kesinti tutarı boş görünüyor oraya da  planlanan kesinti tutarı 
+
+ayrıca bordro sayfasındaki Haciz Ödemesi Yap butonu Haciz sayfasına taşınacak
+
+haciz sayfasında Excele aktar butonu vardı o gitmiş ekleyelim

@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Build outputs
+build/
+dist/
+*.spec
+*.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.log
+yedekler/
+bordrolar/
+mobile.zip
+upx.exe
+service_account.json
+pys_connection.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment
+.env
+*.ini
+
+# Cache
+*.json
+!requirements.txt
+!README.md

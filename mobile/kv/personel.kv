@@ -1,0 +1,23 @@
+<PersonelScreen>:
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDTopAppBar:
+            title: "Personel Yönetimi"
+            left_action_items: [['arrow-left', lambda x: root.go_back()]]
+            elevation: 2
+
+        MDTextField:
+            id: search_field
+            hint_text: "🔍 Personel Ara..."
+            mode: 'rectangle'
+            size_hint_x: 1
+            size_hint_y: None
+            height: dp(48)
+            padding: dp(12), dp(8)
+            on_text: root.load_data()
+
+        MDScrollView:
+            MDList:
+                id: personel_list
+</PersonelScreen>

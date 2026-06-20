@@ -1,0 +1,5 @@
+pyinstaller --onefile --noconsole --upx-dir "C:\upx" --icon pys_icon_128x128.png `
+  --add-data "pys_icon_16x16.png;." --add-data "pys_icon_24x24.png;." --add-data "pys_icon_32x32.png;." `
+  --add-data "pys_icon_48x48.png;." --add-data "pys_icon_64x64.png;." --add-data "pys_icon_128x128.png;." `
+  --add-data "pys_icon_256x256.png;." --add-data "templates\ÖZLÜK_EVRAKLARI_FRESH_2026.docx;templates" `
+  main.py
